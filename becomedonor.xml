@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lifedonor.lifedonor.BecomeDonor">
+
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+        <EditText
+            android:id="@+id/namebecome"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/agebecome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/namebecome"
+            android:layout_alignStart="@+id/namebecome"
+            android:layout_below="@+id/namebecome"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/mobilebecome"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/agebecome"
+            android:layout_below="@+id/agebecome"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Mobile No"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/emailbecome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_below="@+id/mobilebecome"
+            android:layout_alignStart="@+id/mobilebecome"
+            android:layout_alignEnd="@+id/mobilebecome" />
+
+        <Button
+            android:id="@+id/submitbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="SUBMIT"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/bloodgrp"
+            android:layout_marginBottom="53dp"
+            android:layout_alignEnd="@+id/bloodgrp" />
+
+        <EditText
+            android:id="@+id/bloodgrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/emailbecome"
+            android:layout_alignStart="@+id/emailbecome"
+            android:layout_below="@+id/emailbecome"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:hint="Blood Group"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/bloodgrp"
+            android:layout_alignStart="@+id/bloodgrp"
+            android:layout_below="@+id/bloodgrp"
+            android:layout_marginTop="21dp"
+            android:ems="10"
+            android:hint="Address, City"
+            android:inputType="textMultiLine" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
